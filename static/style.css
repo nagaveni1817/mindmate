@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGE BASE */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f6f8ff;
+
+    background-image:
+        linear-gradient(45deg, rgba(108,140,255,0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(108,140,255,0.05) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(108,140,255,0.05) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(108,140,255,0.05) 75%);
+
+    background-size: 100px 100px;
+}
+
+
+
+/* COMMON CENTER WRAPPER */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CARD */
+.hero-card,
+.card {
+    background-color: #fffaf6;
+    padding: 55px 45px;
+    border-radius: 18px;
+    text-align: center;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS — BIG FIRST LINE */
+h1 {
+    font-size: 42px;
+    color: #2d2a26;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 30px;   /* ⬅ bigger & clear */
+    color: #2d2a26;
+    margin-bottom: 22px;
+}
+
+/* NORMAL TEXT */
+p,
+.tagline {
+    font-size: 16px;
+    color: #5f5b57;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* 🌟 STEPS — THIS IS THE KEY FIX */
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* center under heading */
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.steps div {
+    font-size: 17px;
+    color: #3f3b37;
+}
+
+/* FOOTER TEXT */
+.footer-text {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #8a847f;
+}
+
+/* FORM ELEMENTS */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #3d3a36;
+}
+
+select,
+textarea,
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d6cfc9;
+    margin-bottom: 18px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* BUTTONS */
+button {
+    background-color: #6c8cff;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a7ae6;
+}
+
+
+/* PRIMARY CTA */
+.primary-btn {
+    background-color: #c89b6d;
+    font-weight: 600;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+a {
+    color: #6c8cff;
+    font-weight: 500;
+}

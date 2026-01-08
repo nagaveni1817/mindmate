@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MindMate – Mood Reset</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="card">
+    <h2>Let’s try something light 🙂</h2>
+
+    <p class="soft-text">
+        No pressure — just a small pause together.
+    </p>
+
+    <p style="margin-top:18px; font-size:17px;">
+        {{ joke }}
+    </p>
+
+    <p class="soft-text" style="margin-top:18px;">
+        Did that help even a little?
+    </p>
+
+    <form action="/humor_response" method="post" style="margin-top:25px;">
+        <input type="hidden" name="step" value="{{ step }}">
+
+        <button type="submit" name="response" value="yes">
+            😊 I smiled
+        </button>
+
+        <button type="submit" name="response" value="no">
+            😐 Not yet
+        </button>
+    </form>
+</div>
+
+
+</body>
+</html>

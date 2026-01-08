@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MindMate – Decision</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    {% if state == "STABLE" %}
+        <h2>You’re doing okay 🙂</h2>
+        <p>Let’s keep your momentum steady.</p>
+
+        <a href="/motivation">
+            <button>Light Motivation</button>
+        </a>
+
+        <button>Continue Studying</button>
+
+    {% elif state == "FOCUS_LOSS" %}
+        <h2>Focus seems to be slipping</h2>
+        <p>Let’s reset your attention for a moment.</p>
+
+        <a href="/focus">
+            <button>2-Minute Calm Reset</button>
+        </a>
+
+        <button>Start Focus Mode</button>
+{% else %}
+    <h2>You’re under a lot right now</h2>
+    <p>Let’s start with something gentle. You don’t have to solve everything at once.</p>
+
+    <a href="/humor">
+        <button class="primary-btn">Light Mood Reset</button>
+    </a>
+
+    <p style="margin-top:15px; font-size:14px;">
+        <a href="/focus">Prefer breathing instead?</a>
+    </p>
+{% endif %}
+
+
+</div>
+
+</body>
+</html>

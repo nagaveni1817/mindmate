@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check-in</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>How are you feeling right now?</h2>
+
+        <form action="/decision" method="post">
+            <label>Stress level</label>
+            <select name="stress">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <label>What’s causing pressure?</label>
+            <select name="pressure">
+                <option>Homework</option>
+                <option>Exam</option>
+                <option>Personal</option>
+            </select>
+
+            <label>How long have you been studying?</label>
+            <select name="duration">
+                <option>0–30 minutes</option>
+                <option>30–60 minutes</option>
+                <option>60+ minutes</option>
+            </select>
+
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
